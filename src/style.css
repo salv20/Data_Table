@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  text-transform: capitalize;
+  display: block;
+}
+
+ul .active {
+  border-bottom: 2px solid #25213b;
+  padding: 0 4px;
+  color: #25213b;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-1 {
+  position: relative;
+}
+
+.slide-btn,
+.slide-btn::after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.slide-btn::before,
+.slide-btn::after {
+  background-color: #c6c2de;
+  content: "";
+  position: absolute;
+}
+
+.btn-1::after {
+  height: 0%;
+  top: 0%;
+  left: 0;
+  width: 100%;
+}
+
+.btn-1:hover::after {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.checkbox {
+  accent-color: #6d5bd0;
+  background-color: #6d5bd0;
+}
+.bx-checkbox {
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.active-Stbtn {
+  border: 6px solid #6d5bd0;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  font-size: 5px;
+  color: transparent;
+}
